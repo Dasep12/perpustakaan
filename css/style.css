@@ -1,0 +1,732 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*heading / header*/
+.header{
+	height: 40px;
+	color: #fff;
+	width: 100%;
+	background: red;
+	margin-top: -20px;
+}
+.header h2{
+	margin-left: 12px;
+	font-family: Forte;
+}
+.header span {
+	position: relative;
+	top: -37px;
+	left: 85%;
+	border-radius: 2px;
+}
+.header label {
+	position: relative;
+	top: -37px;
+	left: 86%;
+	background: #000;
+	letter-spacing: .1em;
+	border-radius: 3px;
+}
+
+
+/*Sidebar*/ 
+.sidebar {
+	height: 585px;
+	width: 250px;
+	border-bottom: 1px solid #ddd;
+	background: #fff;
+}
+.sidebar img {
+	margin-top: 12px;
+	margin-left: 30px;
+	height: 100px;
+	width: 170px;
+	margin-bottom: 5px;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+}
+.sidebar ul li {
+	border-bottom: 1px solid #ddd;
+	transition: .5s;
+	line-height: 1em;
+}
+.sidebar ul li:hover{
+	border-left: 12px solid #fff;
+	background: rgba(15,12,2,12);
+	cursor: pointer;
+}
+.sidebar ul li img{
+	height: 25px;
+	width: 30px;
+	padding: 3px;
+	margin-left: 4px;
+	position: relative;
+	top: -5px;
+
+}
+.sidebar ul .active{
+	border-left: 12px solid #fff;
+	background: rgba(0,4,12,.6);
+}
+.sidebar ul ul li {
+	display: none;
+}
+.sidebar ul li a {
+	color:  #337ab7;
+	text-decoration: none;
+}
+
+/*Content / isi web*/
+.content{
+	background: #fff;
+	border : 1px solid #ddd;
+	height: 585px;
+	width: 81.5%;
+	left: 250px;
+	z-index: -999;
+	position: absolute;
+	top: 40px;
+}
+
+
+/*footer website*/
+.footer{
+	position: absolute;
+	height: 25px;
+	width: 100%;
+	background: red;
+	border: 1px solid #ddd;
+}
+.footer label {
+	color: #fff;
+	font-size: 12px;
+	font-weight: normal;
+	margin-left: 86%;
+	text-align: right;
+}
+
+/*Tambah Data Buku*/
+.input-book {
+	position: absolute;
+	top: 100px;
+	overflow: auto;
+	height: 500px;
+	left: 256px;
+	border :1px solid #ddd;
+	z-index: 1;
+	border-radius: 3px;
+	width: 80%;
+}
+.transaksi {
+	z-index: 9999;
+	width: 100%;
+	border : none;
+	border-bottom: 1px solid #ddd;
+	height: 200px;
+}
+.transaksi .panel {
+	position: relative;
+	top: 90px;
+
+}
+.transaksi2 {
+	position: fixed;
+	left: 55%;
+	top: 100px;
+	z-index:1;
+	width: 80%;
+}
+.transaksi2 span {
+	position: relative;
+}
+.transaksi2 .form-control {
+	position: relative;
+}
+
+.transaksi table tbody td{
+	border: none;
+}
+.transaksi span {
+	position: relative;
+	top: 25px;
+	left: 12px;
+	font-weight: bold;
+}
+.transaksi .form-control {
+	position: relative;
+	width: 30%;
+	border-radius: 3px;
+	margin-bottom: -15px;
+	left: 140px;
+
+}
+.input-book .btn {
+	width: 60%;
+	position: relative;
+	top: 10px;
+	left: 200px;
+	margin-bottom: 12px;
+}
+
+.sub-input-book h4{
+	background: #023;
+	border-radius: 2px;
+	height: 5%;
+	color: #fff;
+	width: 80%;
+	left: 256px;
+	position: absolute;
+	top: 56px;
+	padding: 8px;
+}
+.detail-buku .form-control {
+	position: relative;
+	top: 58px;
+	width: 40%;
+	left: 170px;
+	display: flex;	
+	margin-top: -6px;
+}
+.detail-buku label{
+	position: relative;
+	top: 90px;
+	left: 60px;
+}
+.detail-buku .btn-danger{
+	width: 10%;
+	left: 10px;
+	padding: 4px 5px;
+}
+.detail-buku .btn-info{
+	padding: 4px 5px;
+	width: 10%;
+	z-index: 99;
+	left: 20px;
+}
+.detail-buku .panel{
+	margin-top: 35px;
+}
+/*list-book*/
+.list-book{
+	position: absolute;
+	top: 100px;
+	overflow: auto;
+	height: 500px;
+	left: 256px;
+	border :1px solid #ddd;
+	z-index: 99;
+	border-radius: 3px;
+	width: 80%;
+}
+.sub-list-book h4 {
+	background: #023;
+	border-radius: 2px;
+	height: 5%;
+	color: #fff;
+	width: 80%;
+	left: 256px;
+	position: absolute;
+	top: 56px;
+	padding: 8px;
+}
+.list-book table{
+	width: 100%;
+	margin-top: 50px;
+	margin-left: -0.5px;
+}
+.list-book .btn-danger{
+	padding: 4px;
+	font-size: 12px;
+	z-index: 999;
+	position: absolute;
+	left: 80px;
+	top: 14px;
+	border-radius: 3px;
+}
+.list-book .btn-success{
+	padding: 4px;
+	font-size: 12px;
+	z-index: 999;
+	position: absolute;
+	left: 190px;
+	top: 14px;
+	border-radius: 3px;
+}
+/*Modal Untuk List Buku*/
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.modal.fade .modal-dialog-1 {
+  -webkit-transition: -webkit-transform .3s ease-out;
+       -o-transition:      -o-transform .3s ease-out;
+          transition:         transform .3s ease-out;
+  -webkit-transform: translate(0, -25%);
+      -ms-transform: translate(0, -25%);
+       -o-transform: translate(0, -25%);
+          transform: translate(0, -25%);
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+       -o-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.modal-content-1 {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  outline: 0;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 1);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, 1);
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #000;
+}
+.modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.modal-header-1 {
+  padding: 15px;
+  background: #337ab7;
+  color:  #fff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.modal-body-1 {
+  position: relative;
+  padding: 15px;
+  background: rgba(0,0,0,0.2);
+}
+.modal-body-1 .form-control {
+	border-radius: 5px;
+	background:rgba(0,0,0,0.2);
+	color:  #fff;
+}
+.modal-body-1 .btn-success{
+	width: 80%;
+}
+
+
+.modal-footer-1 {
+  padding: 15px;
+   background: #337ab7;
+  border-radius: 3px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.modal-footer-1 .btn-info {
+	border : 1px solid #ddd;
+	background: #fff;
+	color: navy;
+}
+.modal-footer-1 .btn-info:hover{
+	background: rgba(0,0,0,.2);
+	color: #fff;
+}
+
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .modal-content-1 {
+    -webkit-box-shadow: 0 5px 15px silver;
+            box-shadow: 0 5px 15px silver;
+  }
+  .modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+  }
+}
+/*END*/
+/*Modal Transaksi / Pembayaran*/
+.pay {
+	margin-bottom: -100px;
+
+
+}
+.line-harga{
+	border-top: 1px solid #fff;
+}
+.biaya {
+	margin-top: -5%;
+	margin-left: 50%;
+	margin-right: 40px;
+}
+.biaya .label-info {
+}
+.total {
+	position: relative;
+	left: 50%;
+	margin-top: -8px;
+}
+.pay span {
+	position: relative;
+}
+.pay .form-control {
+	position: relative;
+	width: 30%;
+	margin: -6px;
+	left: 140px;
+	top: -25px;
+}
+.pay2 .btn-success{
+	width: 10%;
+	padding: 7px 6px;
+	margin-left: 78%;
+	position: absolute;
+	bottom: -50px;
+	border :none;
+	transition: .3s;
+	background: rgba(12,0,48,1);
+}
+.pay2 .btn-success:hover{
+	background: #fff;
+	color: navy;
+}
+ .total {
+	position: relative;
+	left: 50%;
+	top: -185px;
+}
+.pay2 span {
+	position: relative;
+}
+.pay2 .form-control {
+	position: relative;
+	width: 30%;
+	margin: -6px;
+	left: 120px;
+	top: -25px;
+}
+
+/*End*/
+/*Transaksi*/
+.list-transaksi{
+	position: absolute;
+	float: left;
+}
+.list-transaksi li {
+	float: left;
+	list-style: none;
+	margin: 4px;
+}
+.list-transaksi li label {
+	margin-top: 6px;
+}
+/*Cetak Struk */
+.cetak-struk {
+	background: red;
+	width: 600px;
+	height: 500px;
+}
+.cetak-struk h2 {
+	background: #000;
+	text-align: center;
+}
+/**/
+
+
+/*Form Modal User */
+.form-user{
+	width: 60%;
+}
+.form-user .form-control {
+	background: rgba(0,0,0,.8);
+}
+.profile-user  {
+	position: absolute;
+	top: 40px;
+	left: 61.5%;
+}
+.profile-user img {
+	height: 250px;
+	width: 300px;
+}
+.profile-user input[type='file']{
+	border-radius: 12px;
+	margin-top: 5px;
+	margin-left: 20px;
+	opacity: .5;
+	cursor: pointer;
+}
+.profile-user .btn-info{
+	margin-top: 23px;
+	margin-left: 150px;
+	z-index: -1;
+}
+.profile-user .btn-info:hover{
+	background: purple;
+}
+.info-laporan {
+	left: 12px;
+	position: relative;
+	margin-bottom: -80px;
+}
+.info-laporan table{
+	width: 40%;
+}
+/*Home*/
+.head-home {
+	background: #fff;
+	height: 30px;
+	border :1px solid #ddd;
+	border-radius: 3px;
+	position: absolute;
+	width: 79.8%;
+	top: 60px;
+	left: 256px;
+}
+.head-home .waktu {
+	position: absolute;
+	z-index: 999;
+	font-weight: bold;
+	width: 20%;
+	left: 80%;
+	color:  #337ab7;
+	top: 5px;
+
+}
+.head-home span {
+	top: 3px;
+	position: relative;
+	cursor: pointer;
+	left: 10px;
+}
+.head-home span label {
+	color:  #337ab7;
+	font-weight: normal;
+	cursor: pointer;
+}
+.card-user{
+	background: #c9302c;
+	height: 170px;
+	left: 20px;
+	color: #fff;
+	box-shadow: 0px 0px 2px 2px #ddd;
+	top: 12px;
+	border-radius: 2px;
+	position: relative;
+	width: 300px;
+}
+.card-user h1 {
+	font-size: 60px;
+	margin-bottom: -20px;
+}
+.card-user h2 {
+	font-family: behaus;
+}
+.card-book{
+	background: #d9023c;
+	height: 170px;
+	left: 400px;
+	color: #fff;
+
+	box-shadow: 0px 0px 2px 2px #ddd;
+	top: -178px;
+	border-radius: 2px;
+	position: relative;
+	width: 300px;
+}
+.card-book h1 {
+	font-size: 60px;
+	margin-bottom: -20px;
+}
+.card-book h2 {
+	font-family: behaus;
+}
+.table-user{
+	width: 100%;
+	position: absolute;
+	top: 220px;
+	height: 275px;
+	border-top: none;
+	background: #fff;
+}
+.table-user table{
+	width: 95%;
+	position: relative;
+	top: -50px;
+	left: 20px;
+}
+.table-user span {
+	position: relative;
+	top: -30px;
+	left: 25px;
+	font-family: behaus;
+}
+
+
+/*Profile User*/
+.box-add{
+  position: relative;
+  height: 400px;
+  left: 2px;
+  background: #fff;
+  width: 1000px;
+}
+.box-add form{
+  display: grid;
+}
+.box-add label{
+  margin-left: 40px;
+  position: relative;
+  z-index: 1;
+  font-weight: normal;
+  top: 35px;
+  text-align: left;
+  font-family: Franklin Gothic Book;
+  letter-spacing: .1em;
+}
+
+.box-input{
+  width: 20%;
+  margin-bottom: -20px;
+  padding: 6px;
+  border :1px solid #ccc;
+  position: relative;
+  left: 200px;
+  z-index: 1;
+}
+.btn-radio{
+  position: relative;
+  width: 50px;
+  left: 200px;
+  z-index: 9;
+  height: 60px;
+}
+.btn-radio span{
+  position: absolute;
+  margin-left: 12px;
+
+}
+.box-input:focus {
+  border-color: rgba(12,60,45,1);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.box-input:hover{
+  box-shadow: 0px 0px 1px #000;
+}
+.tambah{
+  background: #ccc;
+  width: 100%;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+  top: 30px;
+}
+.back{
+  position: relative;
+  z-index: 999;
+  left: 95px;
+  top: -5px;
+
+}
+.notice {
+  position: relative;
+  top: 20px;
+  left: 200px;
+}
+.box-add input[type='submit']{
+  width: 8%;
+  border-radius: 1px solid;
+  padding: 4px;
+  letter-spacing: .2em;
+  position: relative;
+
+}
+.icon-profile {
+  height: 200px;
+  width: 300px;
+  background: #fff;
+  border: 1px solid #ddd;
+  position: relative;
+  left: 72%;
+  z-index: 99;
+  top: -130px;
+}
+.icon-profile img{
+  position: absolute;
+  height: 150px;
+  width: 250px;
+  top: 10px;
+  left: 20px;
+}
+.icon-profile input[type='file']{
+  background: #fff;
+  position: relative;
+  top: 170px;
+  left: 30px;
+  color: #000;
+  opacity: .5;
+  cursor: pointer;
+  border-radius: 12px;
+}
